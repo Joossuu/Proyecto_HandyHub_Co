@@ -1,0 +1,83 @@
+/* assets/mantenimientos.css - estilos específicos para mantenimientos */
+
+/* tabla mejor diseñada */
+.table-min {
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+}
+.table-min thead th {
+  text-align:left;
+  padding:12px 14px;
+  font-weight:700;
+  background:#fbfcfe;
+  border-bottom:1px solid #f1f3f5;
+  color:#263238;
+}
+.table-min tbody td {
+  padding:12px 14px;
+  border-bottom:1px solid #f5f7f9;
+  color:#3b4a57;
+  vertical-align:middle;
+}
+.table-min tbody tr:hover {
+  background: #fbfdff;
+}
+
+/* estado badge */
+.badge {
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+}
+.badge.programado { background:#f3f6ff; color:#3153c1; }
+.badge.enproceso { background:#fff7ed; color:#b45309; }
+.badge.completado { background:#ecfdf5; color:#047857; }
+.badge.cancelado { background:#fff1f2; color:#9f1239; }
+
+/* boton principal */
+.btn-primary {
+  background: linear-gradient(180deg,#10b981,#06a46f);
+  color:#fff;
+  border:none;
+  box-shadow: 0 6px 14px rgba(6,95,70,0.08);
+}
+
+/* boton simple */
+.btn { padding:7px 10px; border-radius:8px; border:1px solid #e6e9ef; background:#fff; cursor:pointer; }
+
+/* search & small controls */
+#maintenanceSearch { transition: box-shadow .12s ease; }
+#maintenanceSearch:focus { box-shadow:0 6px 18px rgba(16,24,40,0.06); outline:none; }
+
+/* badges red (dias atrasados en alertas laterales) - si decides aplicar */
+.badge-days { display:inline-block; padding:6px 8px; border-radius:8px; font-weight:700; font-size:12px; background:#fdecea; color:#b91c1c; }
+
+/* modal overlay */
+.hh-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(15,23,42,0.45);
+  z-index:1200;
+}
+.hh-modal {
+  width:760px;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 20px 60px rgba(12,18,25,0.45);
+  padding:18px;
+}
+.hh-modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.hh-modal-header h3 { margin:0; }
+.hh-modal-body label { display:block; font-size:13px; color:#374151; margin-bottom:6px; }
+.hh-modal-body input, .hh-modal-body select, .hh-modal-body textarea {
+  width:100%; padding:8px 10px; border-radius:6px; border:1px solid #e6e9ef; font-size:14px; box-sizing:border-box;
+}
